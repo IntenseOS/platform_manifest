@@ -562,4 +562,7 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
+<!-- BEGIN IntenseOS -->
+  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="intense" revision="mm-6.0" />
+  
 </manifest>
