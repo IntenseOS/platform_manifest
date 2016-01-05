@@ -28,7 +28,7 @@
            sync-j="4" />
 
 <!-- BEGIN IntenseOS -->
-  <project path="build" name="android_build" remote="intense" revision="mm6.0" groups="pdk" >
+  <project path="build" name="android_build" remote="intense" revision="mm-6.0" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" name="platform_manifest" remote="intense" revision="mm-6.0"   />
