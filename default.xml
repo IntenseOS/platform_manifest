@@ -10,7 +10,8 @@
            fetch="https://github.com/" />
            
   <remote name="intense"
-           fetch="https://github.com/IntenseOS/" />
+           fetch="https://github.com/IntenseOS/"
+           revision="mm-6.0" />
            
   <remote name="bit"
            fetch="https://bitbucket.org/" />
@@ -28,10 +29,10 @@
            sync-j="4" />
 
 <!-- BEGIN IntenseOS -->
-  <project path="build" name="android_build" remote="intense" revision="mm-6.0" groups="pdk" >
+  <project path="build" name="android_build" remote="intense" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="android" name="platform_manifest" remote="intense" revision="mm-6.0"   />
+  <project path="android" name="platform_manifest" remote="intense" />
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
@@ -258,9 +259,9 @@
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Profiles" name="CyanogenMod/android_packages_apps_Profiles" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" groups="pdk-fs" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="intense" revision="mm6.0" groups="pdk-fs" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="intense" groups="pdk-fs" />
   <project path="packages/apps/Screencast" name="CyanogenMod/android_packages_apps_Screencast" />
-  <project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="intense" revision="mm-6.0" />
+  <project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="intense" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" groups="pdk-fs" />
@@ -268,7 +269,7 @@
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
   <project path="packages/apps/Tag" name="CyanogenMod/android_packages_apps_Tag" groups="pdk-fs" />
   <project path="packages/apps/Terminal" name="CyanogenMod/android_packages_apps_Terminal" groups="pdk-fs" />
-  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="intense" revision="mm-6.0" />
+  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="intense" />
   <project path="packages/apps/Trebuchet" name="CyanogenMod/android_packages_apps_Trebuchet" />
   <project path="packages/apps/TvSettings" name="CyanogenMod/android_packages_apps_TvSettings" groups="generic_fs" />
   <project path="packages/apps/UnifiedEmail" name="CyanogenMod/android_packages_apps_UnifiedEmail" groups="pdk-fs" />
@@ -310,8 +311,8 @@
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
-  <project path="vendor/intense" name="android_vendor_intense" remote="intense" revision="mm-6.0" />
-  <project path="vendor/cmsdk" name="intense_platform_sdk" remote="intense" revision="mm-6.0" />
+  <project path="vendor/intense" name="android_vendor_intense" remote="intense" />
+  <project path="vendor/cmsdk" name="intense_platform_sdk" remote="intense" />
   <project path="vendor/qcom/opensource/dpm" name="CyanogenMod/android_vendor_qcom_opensource_dpm" />
   <project path="vendor/qcom/opensource/time-services" name="CyanogenMod/android_vendor_qcom_opensource_time-services" />
 <!-- END CYANOGENMOD -->
@@ -568,8 +569,8 @@
 <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.2-kernel" name="UBERTC/aarch64-linux-android-5.2-kernel" remote="bit" revision="master" />
 
 <!-- IntenseOS -->
-  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="intense" revision="mm-6.0" />
-  <project path="packages/apps/OTACenter" name="android_packages_apps_OTACenter" remote="intense" revision="mm-6.0" />
-  <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="intense" revision="mm-6.0" />
+  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="intense" />
+  <project path="packages/apps/OTACenter" name="android_packages_apps_OTACenter" remote="intense" />
+  <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="intense" />
   
 </manifest>
